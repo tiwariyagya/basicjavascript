@@ -39,9 +39,9 @@ console.log(city[city.length-1])//mumbai
 
 console.log("-----------")
 
-// Repalace the value at the position 1
+// Replace the value at the position 1
 //  replace city[1]="bihar"
-console.log(city[1])
+// console.log(city[1])
 
 
 // -----------printing every elements inside arrays-----
@@ -222,30 +222,30 @@ let grtThan15 = []
  console.log("----------")
 
 
-//  let kkk = agg.filter(function(el,index,arr){
-//     return el > 15
-// })
+ let kkk = agk.filter(function(el,index,arr){
+    return el > 15
+})
 
-// console.log(kkk)
+console.log(kkk)
 
-//  console.log("-------------")
+ console.log("-------------")
 
-// //  let kkk = ag.filter => (el,index,arr){el > 15}
+ let kkky = agk.filter(function(el,index,arr){
+     return el > 15})
 
-// // console.log(kkk)
+console.log(kkky)
 
-// console.log("------------")
+console.log("------------")
 
 
-// langauges = ["hindi","marathi","telg"]
+let langauges = ["hindi","marathi","telg"]
 
-// let kp = langauges.filter(function(el){ //
-//    // return el.length > 4  
-//    return el
-// })
-// console.log(kp) //[ 'hindi', 'marathi', ]
+let kp = langauges.filter(function(el){ 
+    return el.length > 4  
+})
+console.log(kp) //[ 'hindi', 'marathi', ]
 
-// console.log("------------")
+console.log("------------")
 
 let odd = [25,35,20,32,33]
 
@@ -256,30 +256,54 @@ let oddd = odd.filter(function(el){
 
 console.log(oddd)
 
+
+console.log("------------")
 // Arrow function
-
-
 let oddk = [25,35,20,32,33]
 
 let oddy= oddk.filter((el)=>el%2 !==0  // why we use explamation mark in the statement
 )
-
 console.log(oddy)
 
+
+
+console.log("------------")
+
+ let dages = [12,13,15,16,18]
+let summ=0
+for(let i =0 ; i<dages.length ; i++){
+    summ = summ + dages[i]
+
+
+}
+console.log(summ)
+console.log("------")
+
+console.log(summ/dages.length)
+
+
+console.log("---------")
 //reduce
 
-let dages = [12,13,15,16,18]
+let staff =[1,1,12,1,14,18]
+let sum = 0
+for (let i=0; i<staff.length ; i++){
+    sum = sum + staff[i]
+}
+console.log(sum/staff.length)
 
-let iii = dages.reduce((acc,el)=> acc + el,0)
+console.log("++++++++++")
 
-
+let iii=staff.reduce (function(acc,el,index,arr){
+     return acc + el
+    },0) 
 console.log(iii)
 
+console.log("++++++++++")
 
-
-
-
-
+let iioi=staff.reduce((acc,el,index,arr)=>
+     acc + el,0) // arrow method
+console.log(iioi)
 
 
 
@@ -300,17 +324,7 @@ console.log(iii)
 
 // // console.log("-------------")
 
-//  let dages = [12,13,15,16,18]
-// // let sum=0
-// // for(let i =0 ; i<dages.length ; i++){
-// //     sum = sum + dages[i]
 
-
-// // }
-// // console.log(sum)
-// // console.log("------")
-
-// // console.log(sum/dages.length)
 
 
 // let numberss=[18,20,16,11,25]
@@ -323,11 +337,52 @@ console.log(iii)
 // }
 // console.log(ags)
 
+// filter
+
+let inAndOut = [-10,15,25,-6,-9,10,-18]
+
+let int = inAndOut.filter(function(el){
+    return el > 0
+})
+
+console.log(int)
+
+console.log("---------------")
 
 
+let outt = inAndOut.filter((el)=>el<0)
+console.log(outt)
+
+console.log("---------------")
+
+//reduce
+
+let intt = inAndOut.filter(function(el){
+    return el > 0
+
+}).reduce(function(acc,el){
+
+    return acc + el
+
+}, 0)
+    console.log(intt)
+
+    console.log("---------------")
+
+    let outtt= inAndOut.filter(function(el){
+        return el < 0
+    
+    }).reduce(function(acc,el){
+    
+        return acc + el
+    
+    }, 0)
+        console.log(outtt)
+
+console.log("------------")
 
 
-
+        
 
 
 
