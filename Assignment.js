@@ -11,9 +11,11 @@ console.log("------------")
  
  let statement="My new learning is javascript"
 
- let newStatement= statement.split("").reverse().join("")
-//  let rev= newStatement.split("").reverse().join("")
- console.log(newStatement)
+//  let newStatement= statement.split("").reverse().join("")
+// //  let rev= newStatement.split("").reverse().join("")
+//  console.log(newStatement)
+
+// for(let i=0)
 
 
 console.log("------------")
