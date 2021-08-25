@@ -9,11 +9,12 @@ console.log("------------")
 
 //2) write a program to reverse only word from sentence
  
- let statement="My new learning is javascript"
+//  let statement="My new learning is javascript"
 
 //  let newStatement= statement.split("").reverse().join("")
-// //  let rev= newStatement.split("").reverse().join("")
+//  let rev= newStatement.split("").reverse().join("")
 //  console.log(newStatement)
+
 
 // for(let i=0)
 
@@ -58,11 +59,26 @@ console.log(highest)
 let sentence = "I am new to javascript"
 let count=0
 
+// for(let i = 0; i<sentence.length;i++){
+  // if(sentence[i]=="a"||sentence[i]=="e"||sentence[i]=="i"||sentence[i]=="o"||sentence[i]=="u"||sentence[i]=="A"||sentence[i]=="E"||sentence[i]=="I"||sentence[i]=="O"||sentence[i]=="U"){
+    // count=count+1
+  // }
+// }
+// console.log(count)
+let vowels = ["a","e","i","o","u","A","E","I","O","U"]
 for(let i = 0; i<sentence.length;i++){
-  if(sentence[i]=="a"||sentence[i]=="e"||sentence[i]=="i"||sentence[i]=="o"||sentence[i]=="u"||sentence[i]=="A"||sentence[i]=="E"||sentence[i]=="I"||sentence[i]=="O"||sentence[i]=="U"){
-    count=count+1
+  if (vowels.includes(sentence[i])){
+    count = count + 1
   }
 }
-console.log(count)
-   
+   console.log(count)
 
+let statement="My new learning is javascript"
+
+let newStatement= statement.split(" ").reverse().join(" ")
+ console.log(newStatement)
+ let revise=" "
+for(let i=newStatement.length-1; i>=0;i--){
+  revise = revise + newStatement[i]
+}
+console.log(revise)
