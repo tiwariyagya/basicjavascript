@@ -382,14 +382,152 @@ let intt = inAndOut.filter(function(el){
 console.log("------------")
 
 
-        
+    // // map only apply in Array
+
+
+    // print name and skills for every student in array
+
+
+         
+    
+    //find??
+    
+    
+    console.log("------------")
+    
+    // fidindex??
+    
+    
+    // comparsion
+    
+    console.log(6==6)
+    
+    
+    console.log("------------")
+    
+    
+    // every some ---------->true false
+    
+    let decimal =[1,5,7,10,2,25,52]
+    
+    let dec = decimal.some(function(el,index,array){
+        return el > 50
+    }) 
+    
+    console.log(dec)
+    
+    console.log("--------------")
+    
+    
+    let decc = decimal.every(function(el,index,array){
+        return el > 50
+    }) 
+    
+    
+    console.log(decc)
+    
+    console.log("------------")
+    
+    
+    // forEach --- similar to map, filter
+    // forEach does not return anything
+    
+    let cities= ["dallas","huston","forthworth","bedford"]
+    let kk = cities.forEach(function(el,index,arr){
+        console.log(`Welcome to ${el}!`)
+    
+    })
+    
+    console.log(kk)
+    
+    console.log("---------------")
+    // sort
+    
+    let hk=["flowermound","dallas","ezyle"]
+    hk.sort()
+    
+    console.log(h)
+    
+    
+    
+    //flat
+    
+    let namesl =[["radha","maya","subhala"],["keshab","narayan","hari"]]
+    let k=namesl.flat()
+    console.log(namesl[1][1])
+    console.log(k)
+    
+    
+    // highest numbers from numbers
+    let arr =[[1,5,3],[33,45,33],[2,500,1]]
+    let arrt = arr.flat()
+    // console.log(arrt)
+    let highest =arrt[0]
+    for(let i=0 ; i<arrt.length;i++){
+      if (arrt[i] >= highest){
+        highest=arrt[i]
+      }
+    }
+    
+    console.log(highest)
+    
+    
+    console.log("----------------")
+    
+    // fill
+    
+    let r =["radha","maya","subhala","keshab","narayan","hari"]
+    
+    console.log(r.fill('a',1,r.length))
+    
+console.log("---------------")
+
+    // slice
+
+
+    let hA = ["john","kerry","nickol","Pritam"]
+
+    console.log(hA.slice(-2))
+    console.log(hA.slice(1,2)) //end valuue not included
+
+console.log("-----concat----------")
+    //concat
+
+    let odds = [13,15,17,19]
+    let evens=[12,14,18,20]
+
+    console.log(odds.concat(evens))
+    
+console.log("-----includes---------")
+
+
+let frts=["apple","banana","papaya","orange","watermelon"]
+let vgts=["cabbage","cauliflower","okra","peas"]
+
+console.log(frts.includes("okra"))
+console.log(frts.includes("papaya"))
+
+console.log("--------splice______")
+// splice(startpoint,no.ofdelete,"replacewith n number",)
+
+console.log(frts.splice(1,2,"hh","vv"))
+console.log(frts.splice(1,2,"hh","vv"))
+
+console.log("-------join-----")
+
+// join
+// Action-join every element of Array
+// Return-string
+
+let kkkp =["my","name","is","Shila"]
+console.log(kkkp.join(" "))
+console.log(kkkp.join("+"))
+
+
+
+console.log("-------join-----")
 
 
 
 
-
-
-
-
-// // map only apply in Array
 

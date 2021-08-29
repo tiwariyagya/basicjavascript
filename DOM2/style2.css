@@ -1,0 +1,30 @@
+/* h1{ 
+     color: brown; 
+     font-style: initial; 
+ } */
+/* p{
+    font-size:25px;
+    font-style:unset
+
+} */
+
+#purple {
+    background-color: purple;
+    height:100px;
+    width:300px;
+
+}
+
+.red {
+    color:red;
+    background-color: yellow;      
+    height:100px;
+    width:100px
+
+}
+#black{
+    color: black;
+    background-color: yellow;
+    height:100px;
+    width:100px
+}

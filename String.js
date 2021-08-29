@@ -251,6 +251,8 @@ let textEight= " Sarswati Pradhan "
 console.log(textEight.length)
 console.log(textEight.trim().length)
 
+textEight.indexOf('a',textEight.indexOf('a')+1)
+
 // charArt      01234567(index)  
 let textNine = "NewWords"
 let y= textNine.charAt(3) // W passing the index
@@ -263,4 +265,12 @@ console.log(y)
 
 
 
+console.log("--------split-------------")
 
+
+// split
+
+let bhanu = "I am new to College"
+
+let bha= bhanu.split(" ")
+console.log(bha)
